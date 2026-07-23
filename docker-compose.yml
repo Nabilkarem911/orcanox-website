@@ -1,0 +1,17 @@
+version: '3.8'
+
+services:
+  web:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: orcanox-website:latest
+    ports:
+      - target: 80
+    deploy:
+      labels:
+        - "traefik.enable=true"
+        - "traefik.http.routers.orcanox.rule=Host(`orcanox.xyz`) || Host(`www.orcanox.xyz`)"
+        - "traefik.http.routers.orcanox.entrypoints=websecure"
+        - "traefik.http.routers.orcanox.tls.certResolver=letsencrypt"
+        - "traefik.http.services.orcanox.loadbalancer.server.port=80"
