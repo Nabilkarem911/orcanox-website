@@ -1,6 +1,9 @@
 services:
   web:
     image: nginx:alpine
+    # required: without a restart policy the container stays down after a host reboot
+    # and gets wiped by the docker prune cron -> Traefik route disappears (404).
+    restart: unless-stopped
     volumes:
       - ./nginx.conf:/etc/nginx/nginx.conf:ro
       - ./html:/usr/share/nginx/html:ro
