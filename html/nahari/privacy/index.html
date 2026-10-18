@@ -103,9 +103,12 @@
       <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>إعادة جدولة التذكيرات بعد إعادة تشغيل الجهاز.</td></tr>
       <tr><td><code>VIBRATE</code></td><td>اهتزاز الجهاز مع الإشعار.</td></tr>
       <tr><td><code>WAKE_LOCK</code></td><td>إيقاظ الجهاز لحظة التذكير حتى يظهر في موعده.</td></tr>
+      <tr><td><code>RECORD_AUDIO</code></td><td>تسجيل ملاحظة صوتية للتذكير — <strong>بس لما تضغط «سجّل صوتك» بنفسك</strong>. مفيش استماع في الخلفية، والتسجيل بيتخزن على جهازك ومش بيتبعت لأي مكان (التطبيق مش طالب إذن إنترنت أصلًا).</td></tr>
       <tr><td><code>INTERNET</code></td><td class="no">غير مطلوب — وغير موجود في التطبيق.</td></tr>
     </tbody>
   </table>
+
+  <p><strong>عن التسجيلات الصوتية:</strong> صوتك بيتسجّل بس لما تدوس علي «سجّل صوتك» جوه تذكير، وبيتوقف لوحده بعد 30 ثانية. الملف بيتخزن في مساحة التطبيق الخاصة على جهازك، وبيتستخدم في حاجة واحدة: إنه يشتغل مكان نغمة الإشعار. لما تحذف التذكير، الملف بيتمسح معاه. <strong>صفر رفع · صفر إرسال · صفر نسخ سحابي.</strong></p>
 
   <h2>٥) المشاركة مع أي طرف تاني</h2>
   <p><strong class="no">صفر مشاركة.</strong> مفيش أي بيانات بتخرج من جهازك، فمفيش حاجة تتشارك أصلًا.</p>
@@ -135,7 +138,7 @@
 
   <div class="en">
     <div class="brand" style="font-family:inherit">Nahari — Privacy Policy</div>
-    <div class="meta" style="margin-top:4px">Last updated: 17 October 2026 · Version 1.0</div>
+    <div class="meta" style="margin-top:4px">Last updated: 18 October 2026 · Version 1.1</div>
 
     <div class="lead" style="margin-top:20px">
       <strong>In one line:</strong> Nahari runs entirely on your device.
@@ -169,9 +172,12 @@
         <tr><td><code>RECEIVE_BOOT_COMPLETED</code></td><td>Re-schedule reminders after a device restart.</td></tr>
         <tr><td><code>VIBRATE</code></td><td>Vibrate with the notification.</td></tr>
         <tr><td><code>WAKE_LOCK</code></td><td>Wake the device briefly so the reminder fires on time.</td></tr>
+        <tr><td><code>RECORD_AUDIO</code></td><td>Record a voice note for a reminder — <strong>only when you tap “Record your voice” yourself</strong>. No background listening. The recording is stored on your device and never sent anywhere (the app does not even hold the Internet permission).</td></tr>
         <tr><td><code>INTERNET</code></td><td class="no">Not required — and not present in the app.</td></tr>
       </tbody>
     </table>
+
+    <p><strong>About voice recordings:</strong> audio is captured only when you tap “Record your voice” inside a reminder, and it stops automatically after 30 seconds. The file lives in the app’s private storage on your device and serves exactly one purpose — playing instead of the notification sound. Deleting the reminder deletes the file with it. <strong>No upload, no transmission, no cloud copy.</strong></p>
 
     <h2>5. Data sharing</h2>
     <p><strong>None.</strong> No data leaves your device, and nothing is shared with any third party.</p>
